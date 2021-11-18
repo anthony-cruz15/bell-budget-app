@@ -8,8 +8,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
 
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
@@ -38,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }).attach();
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
