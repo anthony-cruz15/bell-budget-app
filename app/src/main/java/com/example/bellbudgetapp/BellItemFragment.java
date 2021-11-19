@@ -62,11 +62,17 @@ public class BellItemFragment extends Fragment {
         startActivity(intent);
     }
 
+    public void goFurniture(View view) {
+        Intent intent = new Intent(getActivity(), BellFurnitureActivity.class);
+        startActivity(intent);
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_bell_item, container, false);
+        //Inflate other stuff
         Button constructButton = view.findViewById(R.id.construction_button);
         constructButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,6 +80,14 @@ public class BellItemFragment extends Fragment {
                 goConstruction(view);
             }
         });
+        Button furnitureButton = view.findViewById(R.id.bellFurniture_button);
+        furnitureButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goFurniture(view);
+            }
+        });
+        //end
         return view;
     }
 }
