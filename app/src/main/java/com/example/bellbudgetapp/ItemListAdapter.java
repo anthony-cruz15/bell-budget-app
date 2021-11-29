@@ -6,7 +6,15 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.List;
+
 public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHolder> {
+
+    private final List<Item> items;
+
+    public ItemListAdapter(List<Item> items) {
+        this.items = items;
+    }
 
     @NonNull
     @Override

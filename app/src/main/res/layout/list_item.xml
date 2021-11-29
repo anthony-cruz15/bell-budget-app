@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/itemName_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="2"
@@ -23,7 +23,7 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/itemQuantity_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight=".5"
