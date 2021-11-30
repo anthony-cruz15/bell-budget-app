@@ -8,20 +8,23 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.View;
 
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     ViewPager2 pager;
     TabLayout tabLayout;
-    SlideAdapter adapter;
-    RecyclerView.Adapter recyclerAdapter;
+    SlideAdapter slideAdapter;
+    ItemListAdapter recyclerAdapter;
+    RecyclerView itemList;
+    List<Item> items;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +32,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         pager = findViewById(R.id.pager);
         tabLayout = findViewById(R.id.tabLayout);
-        adapter = new SlideAdapter(this);
-        pager.setAdapter(adapter);
+        itemList = findViewById(R.id.itemList);
+
+        items = new ArrayList<Item>();
+        recyclerAdapter = new ItemListAdapter(items);
+
+        slideAdapter = new SlideAdapter(this);
+        pager.setAdapter(slideAdapter);
         new TabLayoutMediator(tabLayout, pager, new TabLayoutMediator.TabConfigurationStrategy() {
             @Override
             public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {

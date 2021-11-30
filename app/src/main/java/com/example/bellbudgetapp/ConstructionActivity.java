@@ -17,9 +17,19 @@ public class ConstructionActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_construction);
+        constructionItems = new ArrayList<Item>();
+
+        logButton = findViewById(R.id.log_button);
     }
 
-    public void addConstructionItem(View view) {
-        //TODO make method work
+    public void addLogBridge(View view) {
+        constructionItems.add(new Item(ItemDB.constructionNames[0], ItemDB.constructionPrices[0]));
+        logButton.setClickable(false);
+    }
+    public void addSuspensionBridge(View v) {
+        constructionItems.add(new Item(ItemDB.constructionNames[1], ItemDB.constructionPrices[1]));
+    }
+    public void addWoodenBridge(View v) {
+        constructionItems.add(new Item(ItemDB.constructionNames[2], ItemDB.constructionPrices[2]));
     }
 }

@@ -2,7 +2,8 @@ package com.example.bellbudgetapp;
 
 public class Item {
     private String name;
-    private Integer price;
+    private Integer price, quantity;
+    private final Integer DEFAULT_QUANTITY = 1;
 
     public Item() {
         name = "";
@@ -12,6 +13,7 @@ public class Item {
     public Item(String name, Integer price) {
         this.name = name;
         this.price = price;
+        quantity = DEFAULT_QUANTITY;
     }
 
     public String getName() {
