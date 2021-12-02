@@ -8,7 +8,7 @@ import android.widget.Button;
 
 import java.util.ArrayList;
 
-public class ConstructionActivity extends AppCompatActivity {
+public class ConstructionActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button logButton, suspensionButton, woodenButton, stoneButton, brickButton, zenButton, redZenButton, ironButton;
     public ArrayList<Item> constructionItems;
@@ -20,16 +20,28 @@ public class ConstructionActivity extends AppCompatActivity {
         constructionItems = new ArrayList<Item>();
 
         logButton = findViewById(R.id.log_button);
-    }
+        suspensionButton = findViewById(R.id.suspension_button);
+        woodenButton = findViewById(R.id.wooden_button);
 
-    public void addLogBridge(View view) {
-        constructionItems.add(new Item(ItemDB.constructionNames[0], ItemDB.constructionPrices[0]));
-        logButton.setClickable(false);
-    }
-    public void addSuspensionBridge(View v) {
-        constructionItems.add(new Item(ItemDB.constructionNames[1], ItemDB.constructionPrices[1]));
-    }
-    public void addWoodenBridge(View v) {
-        constructionItems.add(new Item(ItemDB.constructionNames[2], ItemDB.constructionPrices[2]));
+        logButton.setOnClickListener(this);
+        suspensionButton.setOnClickListener(this);
+        woodenButton.setOnClickListener(this);
+    };
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.log_button:
+                constructionItems.add(new Item(ItemDB.constructionNames[0], ItemDB.constructionPrices[0] ));
+                logButton.setClickable(false);
+                break;
+            case R.id.suspension_button:
+                constructionItems.add(new Item(ItemDB.constructionNames[1], ItemDB.constructionPrices[1]));
+                break;
+            case R.id.wooden_button:
+                constructionItems.add(new Item(ItemDB.constructionNames[2], ItemDB.constructionPrices[2]));
+                break;
+        }
     }
 }
+
