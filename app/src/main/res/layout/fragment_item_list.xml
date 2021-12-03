@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal">
 
     <TextView
         android:id="@+id/itemName_textView"
-        tools:text="Item Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:gravity="left" />
+        android:gravity="left"
+        tools:text="Item Name" />
 
     <ImageButton
         android:id="@+id/imageButton4"
-        tools:ignore="SpeakableTextPresentCheck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
@@ -24,15 +24,14 @@
 
     <TextView
         android:id="@+id/itemQuantity_textView"
-        tools:text="Quanitity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:gravity="center" />
+        android:gravity="center"
+        tools:text="Item Quantity" />
 
     <ImageButton
         android:id="@+id/imageButton3"
-        tools:ignore="SpeakableTextPresentCheck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"

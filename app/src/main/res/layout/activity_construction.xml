@@ -24,37 +24,74 @@
 
             <Button
                 android:id="@+id/log_button"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:onClick="addLogBridge"
+                android:onClick="onClick"
                 android:text="@string/log_bridge_button" />
 
             <Button
                 android:id="@+id/suspension_button"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:onClick="addSuspensionBridge"
+                android:onClick="onClick"
                 android:text="@string/suspension_bridge_button" />
 
             <Button
                 android:id="@+id/wooden_button"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:onClick="addWoodenBridge"
+                android:onClick="onClick"
                 android:text="@string/wooden_bridge_button" />
 
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/stone_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/stone_bridge_button" />
+
+            <Button
+                android:id="@+id/brick_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/brick_bridge_button" />
+
+            <Button
+                android:id="@+id/zen_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/zen_bridge_button" />
+        </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/redZen_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/red_zen_button" />
+
+            <Button
+                android:id="@+id/iron_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/iron_button" />
+        </TableRow>
 
         <TableRow
             android:layout_width="match_parent"

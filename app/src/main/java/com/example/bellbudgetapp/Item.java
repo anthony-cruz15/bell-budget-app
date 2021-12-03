@@ -8,6 +8,7 @@ public class Item {
     public Item() {
         name = "";
         price = 0;
+        quantity = DEFAULT_QUANTITY;
     }
 
     public Item(String name, Integer price) {
@@ -33,7 +34,7 @@ public class Item {
     }
 
     public Integer getPrice() {
-        return price;
+        return price * quantity;
     }
 
     public void setPrice(Integer price) {

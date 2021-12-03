@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 
 import com.example.bellbudgetapp.placeholder.PlaceholderContent;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -26,6 +27,7 @@ public class ItemListFragment extends Fragment {
     // TODO: Customize parameters
     private int mColumnCount = 1;
     private List<Item> items;
+    private ItemRecyclerViewAdapter adapter;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
@@ -51,6 +53,9 @@ public class ItemListFragment extends Fragment {
         if (getArguments() != null) {
             mColumnCount = getArguments().getInt(ARG_COLUMN_COUNT);
         }
+        items = new ArrayList<>();
+        items.add(new Item("My House", 1000000000));
+        adapter = new ItemRecyclerViewAdapter(items);
     }
 
     @Override

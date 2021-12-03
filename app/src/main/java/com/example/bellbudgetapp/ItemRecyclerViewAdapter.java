@@ -35,7 +35,7 @@ public class ItemRecyclerViewAdapter extends RecyclerView.Adapter<ItemRecyclerVi
     public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.item = items.get(position);
         holder.itemNameView.setText(holder.item.getName());
-        holder.itemQuantityView.setText(holder.item.getQuantity());
+        holder.itemQuantityView.setText(holder.item.getQuantity().toString());
     }
 
     @Override
