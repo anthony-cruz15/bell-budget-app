@@ -22,8 +22,6 @@ public class MainActivity extends AppCompatActivity {
     ViewPager2 pager;
     TabLayout tabLayout;
     SlideAdapter slideAdapter;
-    ItemListAdapter recyclerAdapter;
-    RecyclerView itemList;
     List<Item> items;
 
     @Override
@@ -32,10 +30,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         pager = findViewById(R.id.pager);
         tabLayout = findViewById(R.id.tabLayout);
-        itemList = findViewById(R.id.itemList);
-
         items = new ArrayList<Item>();
-        recyclerAdapter = new ItemListAdapter(items);
 
         slideAdapter = new SlideAdapter(this);
         pager.setAdapter(slideAdapter);
