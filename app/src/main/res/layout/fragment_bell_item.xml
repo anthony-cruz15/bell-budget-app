@@ -6,8 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".BellItemFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-
     <Button
         android:id="@+id/bellFurniture_button"
         style="@style/Widget.AppCompat.Button"

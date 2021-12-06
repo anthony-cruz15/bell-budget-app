@@ -2,9 +2,13 @@ package com.example.bellbudgetapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.google.gson.Gson;
 
 import java.util.ArrayList;
 
@@ -71,7 +75,12 @@ public class ConstructionActivity extends AppCompatActivity implements View.OnCl
     }
 
     private void saveItems() {
-
+        SharedPreferences sharedPreferences = this.getSharedPreferences(MainActivity.SHARED_PREF_KEY, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        Gson gson = new Gson();
+        String itemListString = gson.toJson(constructionItems);
+        editor.putString(MainActivity.SHARED_PREF_KEY, itemListString);
+        editor.apply();
     }
 }
 

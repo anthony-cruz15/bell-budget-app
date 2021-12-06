@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     TabLayout tabLayout;
     SlideAdapter slideAdapter;
     List<Item> items;
+    public static final String SHARED_PREF_KEY = "shared_preferences";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

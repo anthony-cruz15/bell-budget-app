@@ -1,6 +1,7 @@
 package com.example.bellbudgetapp;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -22,9 +23,7 @@ import java.util.List;
  */
 public class ItemListFragment extends Fragment {
 
-    // TODO: Customize parameter argument names
     private static final String ARG_COLUMN_COUNT = "column-count";
-    // TODO: Customize parameters
     private int mColumnCount = 1;
     private List<Item> items;
     private ItemRecyclerViewAdapter adapter;
@@ -36,7 +35,6 @@ public class ItemListFragment extends Fragment {
     public ItemListFragment() {
     }
 
-    // TODO: Customize parameter initialization
     @SuppressWarnings("unused")
     public static ItemListFragment newInstance(int columnCount) {
         ItemListFragment fragment = new ItemListFragment();
@@ -56,6 +54,11 @@ public class ItemListFragment extends Fragment {
         items = new ArrayList<>();
         items.add(new Item("My House", 1000000000));
         adapter = new ItemRecyclerViewAdapter(items);
+    }
+
+    private void loadItems() {
+        SharedPreferences sharedPreferences = getActivity().getSharedPreferences(MainActivity.SHARED_PREF_KEY, Context.MODE_PRIVATE);
+        //TODO: Ask Nelson how to do this
     }
 
     @Override

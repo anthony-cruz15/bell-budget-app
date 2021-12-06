@@ -1,5 +1,8 @@
 package com.example.bellbudgetapp;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Item {
     private String name;
     private Integer price, quantity;
@@ -39,5 +42,13 @@ public class Item {
 
     public void setPrice(Integer price) {
         this.price = price;
+    }
+
+    public Integer getTotalPrices(ArrayList<Item> items) {
+        int totalPrices = 0;
+        for (int i = 0; i < items.size(); i++) {
+            totalPrices += items.get(i).getPrice();
+        }
+        return totalPrices;
     }
 }
