@@ -1,5 +1,6 @@
 package com.example.bellbudgetapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -52,10 +54,35 @@ public class MileItemFragment extends Fragment {
         }
     }
 
+    public void goFurniture(View view) {
+        Intent intent = new Intent(getActivity(), MileFurnitureActivity.class);
+        startActivity(intent);
+    }
+
+    public void goRecipes(View view) {
+        Intent intent = new Intent(getActivity(), RecipeActivity.class);
+        startActivity(intent);
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_mile_item, container, false);
+        View view = inflater.inflate(R.layout.fragment_mile_item, container, false);
+        Button furnitureButton = view.findViewById(R.id.mileFurniture_button);
+        furnitureButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goFurniture(view);
+            }
+        });
+        Button recipeButton = view.findViewById(R.id.diy_button);
+        recipeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goRecipes(view);
+            }
+        });
+        return view;
     }
 }

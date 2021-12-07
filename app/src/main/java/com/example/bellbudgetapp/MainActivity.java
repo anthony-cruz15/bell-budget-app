@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     SlideAdapter slideAdapter;
     List<Item> items;
     public static final String SHARED_PREF_KEY = "shared_preferences";
+    public static final String CONSTRUCTION_LIST_KEY = "construction_items_list";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

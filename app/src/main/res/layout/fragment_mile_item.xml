@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:onClick="goFurniture"
         android:text="@string/furniture_button"
         app:icon="@drawable/funiture_icon"
         app:iconTintMode="multiply"

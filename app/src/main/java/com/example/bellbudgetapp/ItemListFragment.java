@@ -14,7 +14,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.bellbudgetapp.placeholder.PlaceholderContent;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -52,13 +55,20 @@ public class ItemListFragment extends Fragment {
             mColumnCount = getArguments().getInt(ARG_COLUMN_COUNT);
         }
         items = new ArrayList<>();
-        items.add(new Item("My House", 1000000000));
+        loadItems();
         adapter = new ItemRecyclerViewAdapter(items);
     }
 
     private void loadItems() {
         SharedPreferences sharedPreferences = getActivity().getSharedPreferences(MainActivity.SHARED_PREF_KEY, Context.MODE_PRIVATE);
+        String constructionItemListString = sharedPreferences.getString(MainActivity.CONSTRUCTION_LIST_KEY, null);
         //TODO: Ask Nelson how to do this
+        Type type = new TypeToken<ArrayList<Item>>(){}.getType();
+        Gson gson = new Gson();
+        items = gson.fromJson(constructionItemListString, type);
+        if (items == null) {
+            items = new ArrayList<>();
+        }
     }
 
     @Override

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ConstructionActivity">
+    tools:context=".MileFurnitureActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -31,29 +31,25 @@
                     android:layout_height="match_parent">
 
                     <Button
-                        android:id="@+id/log_button"
+                        android:id="@+id/button"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:onClick="onClick"
-                        android:text="@string/log_bridge_button" />
+                        android:text="Button" />
 
                     <Button
-                        android:id="@+id/suspension_button"
+                        android:id="@+id/button2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:onClick="onClick"
-                        android:text="@string/suspension_bridge_button" />
+                        android:text="Button" />
 
                     <Button
-                        android:id="@+id/wooden_button"
+                        android:id="@+id/button3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:onClick="onClick"
-                        android:text="@string/wooden_bridge_button" />
-
+                        android:text="Button" />
                 </TableRow>
 
                 <TableRow
@@ -61,45 +57,30 @@
                     android:layout_height="match_parent">
 
                     <Button
-                        android:id="@+id/stone_button"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/button4"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/stone_bridge_button" />
+                        android:text="Button" />
 
                     <Button
-                        android:id="@+id/brick_button"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/button5"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/brick_bridge_button" />
+                        android:text="Button" />
 
                     <Button
-                        android:id="@+id/zen_button"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/button6"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/zen_bridge_button" />
+                        android:text="Button" />
                 </TableRow>
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <Button
-                        android:id="@+id/redZen_button"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/red_zen_button" />
-
-                    <Button
-                        android:id="@+id/iron_button"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/iron_button" />
-                </TableRow>
+                    android:layout_height="match_parent" />
 
                 <TableRow
                     android:layout_width="match_parent"

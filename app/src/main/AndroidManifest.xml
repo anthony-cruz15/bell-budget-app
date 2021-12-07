@@ -10,12 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BellBudgetApp">
         <activity
+            android:name=".RecipeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MileFurnitureActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".BellFurnitureActivity"
             android:exported="false"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ConstructionActivity"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

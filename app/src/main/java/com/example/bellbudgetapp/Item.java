@@ -6,6 +6,7 @@ import java.util.List;
 public class Item {
     private String name;
     private Integer price, quantity;
+    private boolean isBells;
     private final Integer DEFAULT_QUANTITY = 1;
 
     public Item() {
@@ -14,10 +15,11 @@ public class Item {
         quantity = DEFAULT_QUANTITY;
     }
 
-    public Item(String name, Integer price) {
+    public Item(String name, Integer price, boolean isBells) {
         this.name = name;
         this.price = price;
         quantity = DEFAULT_QUANTITY;
+        this.isBells = isBells;
     }
 
     public Integer getQuantity() {

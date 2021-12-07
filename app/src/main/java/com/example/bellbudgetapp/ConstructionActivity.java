@@ -46,29 +46,29 @@ public class ConstructionActivity extends AppCompatActivity implements View.OnCl
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.log_button:
-                constructionItems.add(new Item(ItemDB.constructionNames[0], ItemDB.constructionPrices[0] ));
+                constructionItems.add(new Item(ItemDB.constructionNames[0], ItemDB.constructionPrices[0], true ));
                 logButton.setClickable(false);
                 break;
             case R.id.suspension_button:
-                constructionItems.add(new Item(ItemDB.constructionNames[1], ItemDB.constructionPrices[1]));
+                constructionItems.add(new Item(ItemDB.constructionNames[1], ItemDB.constructionPrices[1], true));
                 break;
             case R.id.wooden_button:
-                constructionItems.add(new Item(ItemDB.constructionNames[2], ItemDB.constructionPrices[2]));
+                constructionItems.add(new Item(ItemDB.constructionNames[2], ItemDB.constructionPrices[2], true));
                 break;
             case R.id.stone_button:
-                constructionItems.add(new Item(ItemDB.constructionNames[3], ItemDB.constructionPrices[3]));
+                constructionItems.add(new Item(ItemDB.constructionNames[3], ItemDB.constructionPrices[3], true));
                 break;
             case R.id.brick_button:
-                constructionItems.add(new Item(ItemDB.constructionNames[4], ItemDB.constructionPrices[4]));
+                constructionItems.add(new Item(ItemDB.constructionNames[4], ItemDB.constructionPrices[4], true));
                 break;
             case R.id.zen_button:
-                constructionItems.add(new Item(ItemDB.constructionNames[5], ItemDB.constructionPrices[5]));
+                constructionItems.add(new Item(ItemDB.constructionNames[5], ItemDB.constructionPrices[5], true));
                 break;
             case R.id.redZen_button:
-                constructionItems.add(new Item(ItemDB.constructionNames[6], ItemDB.constructionPrices[6]));
+                constructionItems.add(new Item(ItemDB.constructionNames[6], ItemDB.constructionPrices[6], true));
                 break;
             case R.id.iron_button:
-                constructionItems.add(new Item(ItemDB.constructionNames[7], ItemDB.constructionPrices[7]));
+                constructionItems.add(new Item(ItemDB.constructionNames[7], ItemDB.constructionPrices[7], true));
                 break;
         }
         saveItems();
@@ -79,7 +79,7 @@ public class ConstructionActivity extends AppCompatActivity implements View.OnCl
         SharedPreferences.Editor editor = sharedPreferences.edit();
         Gson gson = new Gson();
         String itemListString = gson.toJson(constructionItems);
-        editor.putString(MainActivity.SHARED_PREF_KEY, itemListString);
+        editor.putString(MainActivity.CONSTRUCTION_LIST_KEY, itemListString);
         editor.apply();
     }
 }
