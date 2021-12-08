@@ -12,7 +12,6 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
-
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <!-- Bridge Buttons -->
@@ -24,4 +23,28 @@
     <string name="zen_bridge_button">Zen Bridge</string>
     <string name="red_zen_button">Red Zen Bridge</string>
     <string name="iron_button">Iron Bridge</string>
+    <!-- Mile Furniture Buttons -->
+    <string name="construction_sign_btn">Construction sign</string>
+    <string name="lifeguard_chair_btn">Lifeguard chair</string>
+    <string name="portable_toilet_btn">Portable toilet</string>
+    <string name="streetlamp_btn">Streetlamp</string>
+    <string name="utility_pole_btn">Utility Pole</string>
+    <string name="drink_machine_btn">Drink Machine</string>
+    <string name="public_bench_btn">Public bench</string>
+    <string name="snack_machine_btn">Snack Machine</string>
+    <string name="springy_btn">Springy ride-on</string>
+    <string name="tourist_telescope_btn">Tourist telescope</string>
+    <string name="park_clock_btn">Park clock</string>
+    <string name="phone_box_btn">Phone box</string>
+    <string name="sandbox_btn">Sandbox</string>
+    <string name="cotton_candy_btn">Cotton-candy stall</string>
+    <string name="playground_btn">Playground gym</string>
+    <string name="parabolic_btn">Parabolic antenna</string>
+    <string name="soccer_goal">Soccer goal</string>
+    <string name="solar_btn">Solar panel</string>
+    <string name="wind_turbine_btn">Wind turbine</string>
+    <string name="lighthouse_btn">Lighthouse</string>
+    <string name="monster_btn">Monster statue</string>
+    <string name="pool_button">Pool</string>
+    <string name="teacup_btn">Teacup ride</string>
 </resources>

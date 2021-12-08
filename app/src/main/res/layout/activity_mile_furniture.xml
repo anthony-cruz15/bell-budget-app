@@ -31,25 +31,25 @@
                     android:layout_height="match_parent">
 
                     <Button
-                        android:id="@+id/button"
+                        android:id="@+id/construction_sign_button"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Button" />
+                        android:text="@string/construction_sign_btn" />
 
                     <Button
-                        android:id="@+id/button2"
+                        android:id="@+id/lifeguard_button"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Button" />
+                        android:text="@string/lifeguard_chair_btn" />
 
                     <Button
-                        android:id="@+id/button3"
+                        android:id="@+id/portable_button"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Button" />
+                        android:text="@string/portable_toilet_btn" />
                 </TableRow>
 
                 <TableRow
@@ -57,34 +57,174 @@
                     android:layout_height="match_parent">
 
                     <Button
-                        android:id="@+id/button4"
+                        android:id="@+id/streetlamp_button"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Button" />
+                        android:text="@string/streetlamp_btn" />
 
                     <Button
-                        android:id="@+id/button5"
+                        android:id="@+id/utility_pole_button"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Button" />
+                        android:text="@string/utility_pole_btn" />
 
                     <Button
-                        android:id="@+id/button6"
+                        android:id="@+id/drink_button"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Button" />
+                        android:text="@string/drink_machine_btn" />
                 </TableRow>
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent" >
+
+                    <Button
+                        android:id="@+id/public_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/public_bench_btn" />
+
+                    <Button
+                        android:id="@+id/snack_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/snack_machine_btn" />
+
+                    <Button
+                        android:id="@+id/springy_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/springy_btn" />
+                </TableRow>
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent" >
+
+                    <Button
+                        android:id="@+id/tourist_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/tourist_telescope_btn" />
+
+                    <Button
+                        android:id="@+id/park_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/park_clock_btn" />
+
+                    <Button
+                        android:id="@+id/phone_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/phone_box_btn" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Button
+                        android:id="@+id/sandbox_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/sandbox_btn" />
+
+                    <Button
+                        android:id="@+id/cottoncandy_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/cotton_candy_btn" />
+
+                    <Button
+                        android:id="@+id/playground_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/playground_btn" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Button
+                        android:id="@+id/parabolic_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/parabolic_btn" />
+
+                    <Button
+                        android:id="@+id/soccer_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/soccer_goal" />
+
+                    <Button
+                        android:id="@+id/solar_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/solar_btn" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Button
+                        android:id="@+id/wind_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/wind_turbine_btn" />
+
+                    <Button
+                        android:id="@+id/lighthouse_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/lighthouse_btn" />
+
+                    <Button
+                        android:id="@+id/monster_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/monster_btn" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Button
+                        android:id="@+id/pool_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pool_button" />
+
+                    <Button
+                        android:id="@+id/teacup_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/teacup_btn" />
+                </TableRow>
             </TableLayout>
         </LinearLayout>
     </ScrollView>

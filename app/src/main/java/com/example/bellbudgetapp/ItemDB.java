@@ -7,4 +7,11 @@ public class ItemDB {
     public static final Integer[] constructionPrices = {
             98000, 128000, 168000, 168000, 198000, 228000, 228000, 228000
     };
+
+    public static final String[] mileFurnitureNames = {
+      "Construction sign", "Lifeguard chair", "Portable toilet", "Streetlamp", "Utility pole", "Drink machine", "Public bench", "Snack machine", "Springy ride-on", "Tourist telescope", "Park clock", "Phone box", "Sandbox", "Cotton-candy stall", "Playground gym", "Parabolic antenna", "Soccer goal", "Solar panel", "Wind turbine", "Lighthouse", "Monster Statue", "Pool", "Teacup ride"
+    };
+    public static final  Integer[] mileFurniturePrices = {
+      1000, 1000, 1000, 1000, 1000, 2000, 2000, 2000, 2000, 2000, 2400, 2400, 2400, 3000, 3000, 4000, 4000, 4000, 4000, 5000, 5000, 5000
+    };
 }
