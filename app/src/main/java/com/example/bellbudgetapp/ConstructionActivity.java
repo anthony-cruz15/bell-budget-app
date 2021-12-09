@@ -9,7 +9,9 @@ import android.view.View;
 import android.widget.Button;
 
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 public class ConstructionActivity extends AppCompatActivity implements View.OnClickListener {
@@ -21,7 +23,7 @@ public class ConstructionActivity extends AppCompatActivity implements View.OnCl
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_construction);
-        constructionItems = new ArrayList<Item>();
+        loadItems();
         //Bridge Button Bindings
         logButton = findViewById(R.id.log_button);
         suspensionButton = findViewById(R.id.suspension_button);
@@ -45,7 +47,7 @@ public class ConstructionActivity extends AppCompatActivity implements View.OnCl
         switch (view.getId()) {
             case R.id.log_button:
                 constructionItems.add(new Item(ItemDB.constructionNames[0], ItemDB.constructionPrices[0], true ));
-                logButton.setClickable(false);
+                logButton.setEnabled(false);
                 break;
             case R.id.suspension_button:
                 constructionItems.add(new Item(ItemDB.constructionNames[1], ItemDB.constructionPrices[1], true));
@@ -79,6 +81,8 @@ public class ConstructionActivity extends AppCompatActivity implements View.OnCl
         saveItems();
     }
 
+
+
     private void saveItems() {
         SharedPreferences sharedPreferences = this.getSharedPreferences(MainActivity.SHARED_PREF_KEY, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
@@ -86,6 +90,17 @@ public class ConstructionActivity extends AppCompatActivity implements View.OnCl
         String itemListString = gson.toJson(constructionItems);
         editor.putString(MainActivity.CONSTRUCTION_LIST_KEY, itemListString);
         editor.apply();
+    }
+
+    private void loadItems() {
+        SharedPreferences sharedPreferences = this.getSharedPreferences(MainActivity.SHARED_PREF_KEY, Context.MODE_PRIVATE);
+        String constructionItemListString = sharedPreferences.getString(MainActivity.CONSTRUCTION_LIST_KEY, null);
+        Type type = new TypeToken<ArrayList<Item>>(){}.getType();
+        Gson gson = new Gson();
+        constructionItems = gson.fromJson(constructionItemListString, type);
+        if (constructionItems == null) {
+            constructionItems = new ArrayList<>();
+        }
     }
 }
 

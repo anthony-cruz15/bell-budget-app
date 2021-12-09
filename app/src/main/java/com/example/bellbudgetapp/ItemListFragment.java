@@ -54,7 +54,6 @@ public class ItemListFragment extends Fragment {
         if (getArguments() != null) {
             mColumnCount = getArguments().getInt(ARG_COLUMN_COUNT);
         }
-        items = new ArrayList<>();
         loadItems();
         adapter = new ItemRecyclerViewAdapter(items);
     }
@@ -62,13 +61,18 @@ public class ItemListFragment extends Fragment {
     private void loadItems() {
         SharedPreferences sharedPreferences = getActivity().getSharedPreferences(MainActivity.SHARED_PREF_KEY, Context.MODE_PRIVATE);
         String constructionItemListString = sharedPreferences.getString(MainActivity.CONSTRUCTION_LIST_KEY, null);
-        //TODO: Ask Nelson how to do this
+        String mileFurnitureItemListString = sharedPreferences.getString(MainActivity.MILE_FURNITURE_LIST_KEY, null);
         Type type = new TypeToken<ArrayList<Item>>(){}.getType();
         Gson gson = new Gson();
-        items = gson.fromJson(constructionItemListString, type);
-        if (items == null) {
-            items = new ArrayList<>();
+        ArrayList<Item> constructionItems = gson.fromJson(constructionItemListString, type);
+        ArrayList<Item> mileFurnitureItems = gson.fromJson(mileFurnitureItemListString, type);
+        ArrayList<Item> allItems = new ArrayList<>();
+        allItems.addAll(constructionItems);
+        allItems.addAll(mileFurnitureItems);
+        if (mileFurnitureItems == null) {
+            mileFurnitureItems = new ArrayList<Item>();
         }
+        items = allItems;
     }
 
     @Override
@@ -85,7 +89,7 @@ public class ItemListFragment extends Fragment {
             } else {
                 recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
             }
-            recyclerView.setAdapter(new ItemRecyclerViewAdapter(items));
+            recyclerView.setAdapter(adapter);
         }
         return view;
     }

@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     List<Item> items;
     public static final String SHARED_PREF_KEY = "shared_preferences";
     public static final String CONSTRUCTION_LIST_KEY = "construction_items_list";
+    public static final String MILE_FURNITURE_LIST_KEY = "mile_furniture_items_list";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
