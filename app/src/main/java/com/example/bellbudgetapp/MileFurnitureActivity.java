@@ -12,11 +12,13 @@ public class MileFurnitureActivity extends AppCompatActivity implements View.OnC
 
     Button constructionButton, lifeguardButton, portableButton, streetlampButton, utilityButton, drinkButton, publicButton, snackButton, springyButton, touristButton, parkButton, sandboxButton, cottonButton, playgroundButton, parabolicButton, soccerButton, solarButton, windButton, lighthouseButton, monsterButton, poolButton, teacupButton;
     public ArrayList<Item> mileFurnitureItems;
+    private Button[] buttons;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mile_furniture);
-        mileFurnitureItems = new ArrayList<Item>();
+        mileFurnitureItems = new ArrayList<>();
 
         constructionButton = findViewById(R.id.construction_sign_button);
         lifeguardButton = findViewById(R.id.lifeguard_button);
@@ -40,18 +42,33 @@ public class MileFurnitureActivity extends AppCompatActivity implements View.OnC
         monsterButton = findViewById(R.id.monster_button);
         poolButton = findViewById(R.id.pool_button);
         teacupButton = findViewById(R.id.teacup_button);
-
-        constructionButton.setOnClickListener(this);
-        lifeguardButton.setOnClickListener(this);
-        portableButton.setOnClickListener(this);
-        streetlampButton.setOnClickListener(this);
-        utilityButton.setOnClickListener(this);
-        drinkButton.setOnClickListener(this);
-        publicButton.setOnClickListener(this);
+        //Assigning OnClickListener
+        buttons = new Button[] {
+                constructionButton, lifeguardButton, portableButton, streetlampButton, utilityButton, drinkButton, publicButton, snackButton, springyButton, touristButton, parkButton, sandboxButton, cottonButton, playgroundButton, parabolicButton, soccerButton, solarButton, windButton, lighthouseButton, monsterButton, poolButton, teacupButton
+        };
+        for (Button button : buttons) {
+            button.setOnClickListener(this);
+        }
     }
 
     @Override
     public void onClick(View view) {
-
+        switch (view.getId()) {
+            case R.id.construction_sign_button:
+                mileFurnitureItems.add(new Item(ItemDB.mileFurnitureNames[0], ItemDB.mileFurniturePrices[0], false));
+                constructionButton.setClickable(false);
+                break;
+            case R.id.lifeguard_button:
+                mileFurnitureItems.add(new Item(ItemDB.mileFurnitureNames[1], ItemDB.mileFurniturePrices[1], false));
+                constructionButton.setClickable(false);
+                break;
+            case R.id.portable_button:
+                mileFurnitureItems.add(new Item(ItemDB.mileFurnitureNames[2], ItemDB.mileFurniturePrices[2], false));
+                constructionButton.setClickable(false);
+                break;
+            case R.id.streetlamp_button:
+                mileFurnitureItems.add(new Item(ItemDB.mileFurnitureNames[3], ItemDB.mileFurniturePrices[3], false));
+                streetlampButton.setClickable(false);
+        }
     }
 }
