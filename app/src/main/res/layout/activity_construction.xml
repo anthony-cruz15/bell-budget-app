@@ -35,24 +35,36 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:onClick="onClick"
-                        android:text="@string/log_bridge_button" />
+                        android:text="@string/log_bridge_button"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
                     <Button
                         android:id="@+id/suspension_button"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:onClick="onClick"
-                        android:text="@string/suspension_bridge_button" />
+                        android:text="@string/suspension_bridge_button"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
                     <Button
                         android:id="@+id/wooden_button"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:onClick="onClick"
-                        android:text="@string/wooden_bridge_button" />
+                        android:text="@string/wooden_bridge_button"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
                 </TableRow>
 
@@ -65,21 +77,33 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/stone_bridge_button" />
+                        android:fontFamily="@font/itim"
+                        android:text="@string/stone_bridge_button"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
                     <Button
                         android:id="@+id/brick_button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/brick_bridge_button" />
+                        android:fontFamily="@font/itim"
+                        android:text="@string/brick_bridge_button"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
                     <Button
                         android:id="@+id/zen_button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/zen_bridge_button" />
+                        android:fontFamily="@font/itim"
+                        android:text="@string/zen_bridge_button"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
                 </TableRow>
 
                 <TableRow
@@ -91,19 +115,24 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/red_zen_button" />
+                        android:fontFamily="@font/itim"
+                        android:text="@string/red_zen_button"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
                     <Button
                         android:id="@+id/iron_button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/iron_button" />
+                        android:fontFamily="@font/itim"
+                        android:text="@string/iron_button"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
                 </TableRow>
 
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
             </TableLayout>
         </LinearLayout>
     </ScrollView>

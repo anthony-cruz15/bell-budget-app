@@ -130,16 +130,17 @@ public class MileFurnitureActivity extends AppCompatActivity implements View.OnC
                 mileFurnitureItems.add(new Item(ItemDB.mileFurnitureNames[3], ItemDB.mileFurniturePrices[3], false));
                 teacupButton.setClickable(false);
         }
+        saveItems();
     }
 
-        private void saveItems () {
-            SharedPreferences sharedPreferences = this.getSharedPreferences(MainActivity.SHARED_PREF_KEY, Context.MODE_PRIVATE);
-            SharedPreferences.Editor editor = sharedPreferences.edit();
-            Gson gson = new Gson();
-            String itemListString = gson.toJson(mileFurnitureItems);
-            editor.putString(MainActivity.MILE_FURNITURE_LIST_KEY, itemListString);
-            editor.apply();
-        }
+    private void saveItems () {
+        SharedPreferences sharedPreferences = this.getSharedPreferences(MainActivity.SHARED_PREF_KEY, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        Gson gson = new Gson();
+        String itemListString = gson.toJson(mileFurnitureItems);
+        editor.putString(MainActivity.MILE_FURNITURE_LIST_KEY, itemListString);
+        editor.apply();
+    }
     private void loadItems() {
         SharedPreferences sharedPreferences = this.getSharedPreferences(MainActivity.SHARED_PREF_KEY, Context.MODE_PRIVATE);
         String mileFurnitureItemListString = sharedPreferences.getString(MainActivity.MILE_FURNITURE_LIST_KEY, null);

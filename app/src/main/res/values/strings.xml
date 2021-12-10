@@ -47,4 +47,19 @@
     <string name="monster_btn">Monster statue</string>
     <string name="pool_button">Pool</string>
     <string name="teacup_btn">Teacup ride</string>
+    <!-- Recipe Buttons -->
+    <string name="fence_btn">Fence recipe</string>
+    <string name="drinking_btn">Drinking Fountain recipe</string>
+    <string name="manhole_btn">Manhole cover recipe</string>
+    <string name="stone_btn">Stone tablet recipe</string>
+    <string name="destinations_btn">Destination signpost recipe</string>
+    <string name="wave_btn">Wave breaker recipe</string>
+    <string name="brick_btn">Brick well recipe</string>
+    <string name="simple_well_btn">Simple well recipe</string>
+    <string name="stall_btn">Stall recipe</string>
+    <string name="stone_arch_btn">Stone arch recipe</string>
+    <string name="fountain_btn">Fountain recipe</string>
+    <string name="outdoor_btn">Outdoor bath recipe</string>
+    <string name="silo_btn">silo recipe</string>
+    <string name="robot_btn">Robot hero recipe</string>
 </resources>

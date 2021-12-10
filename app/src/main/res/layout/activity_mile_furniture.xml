@@ -32,27 +32,36 @@
 
                     <Button
                         android:id="@+id/construction_sign_button"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:onClick="onClick"
-                        android:text="@string/construction_sign_btn" />
+                        android:text="@string/construction_sign_btn"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
                     <Button
                         android:id="@+id/lifeguard_button"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:onClick="onClick"
-                        android:text="@string/lifeguard_chair_btn" />
+                        android:text="@string/lifeguard_chair_btn"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
                     <Button
                         android:id="@+id/portable_button"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:onClick="onClick"
-                        android:text="@string/portable_toilet_btn" />
+                        android:text="@string/portable_toilet_btn"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
                 </TableRow>
 
                 <TableRow
@@ -61,27 +70,36 @@
 
                     <Button
                         android:id="@+id/streetlamp_button"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:onClick="onClick"
-                        android:text="@string/streetlamp_btn" />
+                        android:text="@string/streetlamp_btn"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
                     <Button
                         android:id="@+id/utility_pole_button"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:onClick="onClick"
-                        android:text="@string/utility_pole_btn" />
+                        android:text="@string/utility_pole_btn"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
                     <Button
                         android:id="@+id/drink_button"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:onClick="onClick"
-                        android:text="@string/drink_machine_btn" />
+                        android:text="@string/drink_machine_btn"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
                 </TableRow>
 
                 <TableRow
@@ -90,27 +108,36 @@
 
                     <Button
                         android:id="@+id/public_button"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:onClick="onClick"
-                        android:text="@string/public_bench_btn" />
+                        android:text="@string/public_bench_btn"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
                     <Button
                         android:id="@+id/snack_button"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:onClick="onClick"
-                        android:text="@string/snack_machine_btn" />
+                        android:text="@string/snack_machine_btn"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
                     <Button
                         android:id="@+id/springy_button"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:onClick="onClick"
-                        android:text="@string/springy_btn" />
+                        android:text="@string/springy_btn"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
                 </TableRow>
 
                 <TableRow
@@ -119,27 +146,36 @@
 
                     <Button
                         android:id="@+id/tourist_button"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:onClick="onClick"
-                        android:text="@string/tourist_telescope_btn" />
+                        android:text="@string/tourist_telescope_btn"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
                     <Button
                         android:id="@+id/park_button"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:onClick="onClick"
-                        android:text="@string/park_clock_btn" />
+                        android:text="@string/park_clock_btn"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
                     <Button
                         android:id="@+id/phone_button"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:onClick="onClick"
-                        android:text="@string/phone_box_btn" />
+                        android:text="@string/phone_box_btn"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
                 </TableRow>
 
                 <TableRow
@@ -148,27 +184,36 @@
 
                     <Button
                         android:id="@+id/sandbox_button"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:onClick="onClick"
-                        android:text="@string/sandbox_btn" />
+                        android:text="@string/sandbox_btn"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
                     <Button
                         android:id="@+id/cottoncandy_button"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:onClick="onClick"
-                        android:text="@string/cotton_candy_btn" />
+                        android:text="@string/cotton_candy_btn"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
                     <Button
                         android:id="@+id/playground_button"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:onClick="onClick"
-                        android:text="@string/playground_btn" />
+                        android:text="@string/playground_btn"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
                 </TableRow>
 
                 <TableRow
@@ -177,27 +222,36 @@
 
                     <Button
                         android:id="@+id/parabolic_button"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:onClick="onClick"
-                        android:text="@string/parabolic_btn" />
+                        android:text="@string/parabolic_btn"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
                     <Button
                         android:id="@+id/soccer_button"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:onClick="onClick"
-                        android:text="@string/soccer_goal" />
+                        android:text="@string/soccer_goal"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
                     <Button
                         android:id="@+id/solar_button"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:onClick="onClick"
-                        android:text="@string/solar_btn" />
+                        android:text="@string/solar_btn"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
                 </TableRow>
 
@@ -207,27 +261,36 @@
 
                     <Button
                         android:id="@+id/wind_button"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:onClick="onClick"
-                        android:text="@string/wind_turbine_btn" />
+                        android:text="@string/wind_turbine_btn"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
                     <Button
                         android:id="@+id/lighthouse_button"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:onClick="onClick"
-                        android:text="@string/lighthouse_btn" />
+                        android:text="@string/lighthouse_btn"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
                     <Button
                         android:id="@+id/monster_button"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:onClick="onClick"
-                        android:text="@string/monster_btn" />
+                        android:text="@string/monster_btn"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
                 </TableRow>
 
                 <TableRow
@@ -236,17 +299,25 @@
 
                     <Button
                         android:id="@+id/pool_button"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:onClick="onClick"
-                        android:text="@string/pool_button" />
+                        android:text="@string/pool_button"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
                     <Button
                         android:id="@+id/teacup_button"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:onClick="onClick"
-                        android:text="@string/teacup_btn" />
+                        android:text="@string/teacup_btn"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
                 </TableRow>
             </TableLayout>
         </LinearLayout>
