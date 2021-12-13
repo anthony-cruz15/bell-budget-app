@@ -11,7 +11,8 @@
         android:theme="@style/Theme.BellBudgetApp">
         <activity
             android:name=".RecipeActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".MileFurnitureActivity"
             android:exported="true"

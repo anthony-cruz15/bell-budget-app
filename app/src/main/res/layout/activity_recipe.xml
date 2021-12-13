@@ -37,6 +37,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:text="@string/fence_btn" />
 
                     <Button
@@ -44,6 +45,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:text="@string/drinking_btn" />
 
                     <Button
@@ -51,6 +53,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:text="@string/manhole_btn" />
                 </TableRow>
 
@@ -63,6 +66,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:text="@string/stone_btn" />
 
                     <Button
@@ -70,6 +74,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:text="@string/destinations_btn" />
 
                     <Button
@@ -77,6 +82,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:text="@string/wave_btn" />
                 </TableRow>
 
@@ -89,6 +95,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:text="@string/brick_btn" />
 
                     <Button
@@ -96,6 +103,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:text="@string/simple_well_btn" />
 
                     <Button
@@ -103,6 +111,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:text="@string/stall_btn" />
                 </TableRow>
 
@@ -115,6 +124,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:text="@string/stone_arch_btn" />
 
                     <Button
@@ -122,6 +132,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:text="@string/fountain_btn" />
 
                     <Button
@@ -129,6 +140,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:text="@string/outdoor_btn" />
                 </TableRow>
 
@@ -141,6 +153,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:text="@string/silo_btn" />
 
                     <Button
@@ -148,6 +161,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/itim"
                         android:text="@string/robot_btn" />
                 </TableRow>
             </TableLayout>

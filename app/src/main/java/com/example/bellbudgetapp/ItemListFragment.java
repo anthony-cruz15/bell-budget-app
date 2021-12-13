@@ -63,14 +63,19 @@ public class ItemListFragment extends Fragment {
         //Assigns strings to the lists
         String constructionItemListString = sharedPreferences.getString(MainActivity.CONSTRUCTION_LIST_KEY, null);
         String mileFurnitureItemListString = sharedPreferences.getString(MainActivity.MILE_FURNITURE_LIST_KEY, null);
+        String recipeItemListString = sharedPreferences.getString(MainActivity.RECIPE_LIST_KEY, null);
         Type type = new TypeToken<ArrayList<Item>>(){}.getType();
         Gson gson = new Gson();
         //Gets the list from the strings
         ArrayList<Item> constructionItems = gson.fromJson(constructionItemListString, type);
         ArrayList<Item> mileFurnitureItems = gson.fromJson(mileFurnitureItemListString, type);
+        ArrayList<Item> recipeItems = gson.fromJson(recipeItemListString, type);
         //Creates new ArrayList that combines all the ArrayLists
         ArrayList<Item> allItems = new ArrayList<>();
         allItems.addAll(constructionItems);
+        if (recipeItems != null) {
+            allItems.addAll(recipeItems);
+        }
         if (mileFurnitureItems != null) {
             allItems.addAll(mileFurnitureItems);
         }

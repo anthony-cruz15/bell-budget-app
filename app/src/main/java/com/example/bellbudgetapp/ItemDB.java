@@ -14,4 +14,11 @@ public class ItemDB {
     public static final  Integer[] mileFurniturePrices = {
       1000, 1000, 1000, 1000, 1000, 2000, 2000, 2000, 2000, 2000, 2400, 2400, 2400, 3000, 3000, 4000, 4000, 4000, 4000, 5000, 5000, 5000
     };
+
+    public static final String[] recipeNames = {
+      "Fence Recipes", "Drinking fountain", "Manhole cover", "Stone tablet", "Destinations signpost", "Wave breaker", "Brick well", "Simple well", "Stall", "Stone arch", "Fountain", "Outdoor bath", "Silo", "Robot hero"
+    };
+    public static final Integer[] recipePrices = {
+      1000, 800, 800, 800, 1500, 1500, 2000, 2000, 2000, 2000, 3000, 3000, 3000, 5000
+    };
 }
