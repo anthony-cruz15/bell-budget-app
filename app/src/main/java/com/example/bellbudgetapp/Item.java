@@ -42,15 +42,4 @@ public class Item {
         return price * quantity;
     }
 
-    public void setPrice(Integer price) {
-        this.price = price;
-    }
-
-    public Integer getTotalPrices(ArrayList<Item> items) {
-        int totalPrices = 0;
-        for (int i = 0; i < items.size(); i++) {
-            totalPrices += items.get(i).getPrice();
-        }
-        return totalPrices;
-    }
 }

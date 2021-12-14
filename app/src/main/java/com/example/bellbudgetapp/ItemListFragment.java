@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.bellbudgetapp.placeholder.PlaceholderContent;
 import com.google.gson.Gson;
@@ -30,6 +31,7 @@ public class ItemListFragment extends Fragment {
     private int mColumnCount = 1;
     private List<Item> items;
     private ItemRecyclerViewAdapter adapter;
+    private TextView bellTV, mileTV;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
@@ -54,6 +56,8 @@ public class ItemListFragment extends Fragment {
         if (getArguments() != null) {
             mColumnCount = getArguments().getInt(ARG_COLUMN_COUNT);
         }
+        bellTV = getActivity().findViewById(R.id.bellAmount_textView);
+        mileTV = getActivity().findViewById(R.id.mileAmount_textView);
         loadItems();
         adapter = new ItemRecyclerViewAdapter(items);
     }
@@ -100,5 +104,20 @@ public class ItemListFragment extends Fragment {
             recyclerView.setAdapter(adapter);
         }
         return view;
+    }
+
+    private void saveItems () {
+        SharedPreferences sharedPreferences = getActivity().getSharedPreferences(MainActivity.SHARED_PREF_KEY, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        Gson gson = new Gson();
+        String itemListString = gson.toJson(items);
+        editor.putString(MainActivity.ITEM_LIST_KEY, itemListString);
+        editor.apply();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        saveItems();
     }
 }

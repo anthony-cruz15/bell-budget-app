@@ -11,30 +11,49 @@
         android:name="com.example.bellbudgetapp.ItemListFragment"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout="@layout/fragment_item_list_list" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/bellAmountLabel_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintEnd_toEndOf="@+id/textView4" />
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/bell_label"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="@+id/fragmentContainerView"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentContainerView" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/bellAmount_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="32dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="@+id/bellAmountLabel_textView"
+        app:layout_constraintTop_toBottomOf="@+id/bellAmountLabel_textView" />
+
+    <TextView
+        android:id="@+id/mileAmountLabel_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="@string/mile_label"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/bellAmountLabel_textView"
+        app:layout_constraintEnd_toEndOf="@+id/fragmentContainerView" />
+
+    <TextView
+        android:id="@+id/mileAmount_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="@+id/mileAmountLabel_textView"
+        app:layout_constraintTop_toBottomOf="@+id/mileAmountLabel_textView" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

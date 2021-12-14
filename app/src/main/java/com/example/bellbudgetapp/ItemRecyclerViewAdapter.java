@@ -3,6 +3,7 @@ package com.example.bellbudgetapp;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
@@ -35,6 +36,14 @@ public class ItemRecyclerViewAdapter extends RecyclerView.Adapter<ItemRecyclerVi
         holder.item = items.get(position);
         holder.itemNameView.setText(holder.item.getName());
         holder.itemQuantityView.setText(holder.item.getQuantity().toString());
+        holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                items.remove(holder.item);
+                notifyItemRemoved(holder.getLayoutPosition());
+                return true;
+            }
+        });
     }
 
     @Override

@@ -62,4 +62,7 @@
     <string name="outdoor_btn">Outdoor bath recipe</string>
     <string name="silo_btn">silo recipe</string>
     <string name="robot_btn">Robot hero recipe</string>
+    <!-- Labels for Buttons -->
+    <string name="bell_label">Bells</string>
+    <string name="mile_label">Miles</string>
 </resources>
