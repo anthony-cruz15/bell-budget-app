@@ -76,7 +76,6 @@ public class ItemListFragment extends Fragment {
         ArrayList<Item> recipeItems = gson.fromJson(recipeItemListString, type);
         //Creates new ArrayList that combines all the ArrayLists
         ArrayList<Item> allItems = new ArrayList<>();
-        allItems.addAll(constructionItems);
         if (recipeItems != null) {
             allItems.addAll(recipeItems);
         }
