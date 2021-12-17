@@ -83,6 +83,9 @@ public class ItemListFragment extends Fragment {
         if (mileFurnitureItems != null) {
             allItems.addAll(mileFurnitureItems);
         }
+        if (constructionItems != null) {
+            allItems.addAll(constructionItems);
+        }
         //sets the item list to the list combining all items
         items = allItems;
     }
